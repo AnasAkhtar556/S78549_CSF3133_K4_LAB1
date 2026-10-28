@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+</head>
+<body>
+<h1>Registration</h1>
+<form action="Registration.html" method="post">
+  <div>
+    <label for="fullName">Full Name:</label><br>
+    <input type="text" id="fullName" name="fullName" required>
+  </div>
+  <br>
+  <div>
+    <label for="matricNumber">Matric Number:</label><br>
+<input type="text" id="matricNumber" name="matricNumber" required>
+  </div>
+  <br>
+  <div>
+    <label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required>
+    </div>
+  <br>
+
+  <!-- Radio Buttons sharing the same name -->
+  <fieldset>
+    <legend>Year of Study:</legend>
+    <input type="radio" id="year1" name="yearOfStudy" value="1" required>
+    <label for="year1">Year 1</label><br>
+
+    <input type="radio" id="year2" name="yearOfStudy" value="2">
+    <label for="year2">Year 2</label><br>
+
+    <input type="radio" id="year3" name="yearOfStudy" value="3">
+    <label for="year3">Year 3</label><br>
+
+    <input type="radio" id="year4" name="yearOfStudy" value="4">
+    <label for="year4">Year 4</label>
+  </fieldset>
+  <br>
+
+  <!-- Checkboxes for sessions -->
+  <fieldset>
+    <legend>Sessions to Join:</legend>
+    <input type="checkbox" id="session1" name="sessions" value="morning_keynote">
+    <label for="session1">Morning Keynote</label><br>
+
+    <input type="checkbox" id="session2" name="sessions" value="technical_presentations">
+    <label for="session2">Technical Paper Presentations</label><br>
+
+    <input type="checkbox" id="session3" name="sessions" value="panel_discussion">
+    <label for="session3">Panel Discussion on AI Trends</label><br>
+
+    <input type="checkbox" id="session4" name="sessions" value="networking">
+    <label for="session4">Networking & Closing</label>
+  </fieldset>
+  <br>
+  <!-- Drop-down list (<select>) -->
+  <div>
+    <label for="faculty">Programme / Faculty:</label><br>
+    <select id="faculty" name="faculty" required>
+      <option value="">-- Please Select --</option>
+      <option value="fskm">Faculty of Computer Science & Information Technology</option>
+      <option value="engineering">Faculty of Engineering</option>
+      <option value="science">Faculty of Science</option>
+      <option value="business">Faculty of Business & Accountancy</option>
+    </select>
+  </div>
+  <br>
+
+  <!-- Submit Button -->
+  <div>
+    <input type="submit" value="Register">
+  </div>
+</form>
+</body>
+</html>
