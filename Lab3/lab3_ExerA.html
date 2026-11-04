@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Campus Bakery Online Order Page  </title>
+</head>
+<body>
+<div>
+    <header>
+        <h1><span>CamousBake</span></h1>
+    </header>
+</div>
+<hr>
+<div>
+    <nav>
+        <a href="#menu">Menu</a> |
+        <a href="#about">About</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+</div>
+<div id="about">
+        <p>Welcome to the <span style="color: brown">Campus Bakery</span>, your go-to spot for fresh, daily-baked goods
+            right in the heart of the university. We <em>proudly</em> serve students, faculty, and
+            visitors with a delicious selection of warm pastries, artisanal breads, and
+            specialty coffees perfect for a quick morning breakfast or a late-night study
+            snack. Made with <strong>high-quality</strong> ingredients and a passion for flavor, our treats
+            are designed to fuel your college days and bring a sweet touch to your campus
+            experience.</p>
+        <h2>Place Your Order</h2>
+        <form>
+            <p>Customer Name</p>
+            <input type="text" placeholder="Enter your name" required autofocus>
+            <p>Phone Number</p>
+            <input type="tel" placeholder="Enter your phone number" required>
+            <p>Email</p>
+            <input type="email" placeholder="Enter your email" required>
+            <p>Pickup date</p>
+            <input type="date">
+            <p>Pickup time</p>
+            <input type="time">
+            <p>Flavour</p>
+            <input type="text" id="flavour" name="flavour"
+                   list="flavour-options" placeholder="Type or select a flavour">
+            <datalist id="flavour-options">
+                <option value="Vanilla Bean"></option>
+                <option value="Double Chocolate"></option>
+                <option value="Red Velvet"></option>
+                <option value="Salted Caramel"></option>
+            </datalist>
+            <p>Icing color</p>
+            <input type="color" value="#ffffff">
+
+            <p>Sweetness Level (1 - 5)</p>
+            <input type="range" min="1" max="5">
+            <br>
+            <button type="submit">Submit Order</button>
+        </form>
+
+
+</div>
+<div id="menu" class="container">
+    <main>
+        <h2>Special Deals</h2>
+        <!-- Entity 2: &gt; used for the promotional offer condition -->
+        <p>Bulk Promotion: Orders &gt; 10 pieces get a free drink!</p>
+        <p>Check out our standard menu pricing in the sidebar menu on the right side of this page.</p>
+    </main>
+    <aside>
+        <h3>Price List</h3>
+        <ul>
+            <!-- Entity 3: &pound; used for currency pricing -->
+            <li>Croissant &mdash; RM2.50</li>
+            <li>Chocolate Muffin &mdash; RM3.00</li>
+            <li>Cinnamon Roll &mdash; RM2.80</li>
+            <li>Baguette &mdash; RM1.80</li>
+        </ul>
+        <form
+                action="/submit-order"
+                method="POST"
+                oninput="totalPrice.value = (parseInt(cupcakes.value) * 3) + (parseInt(cakeSlices.value) * 5)">
+
+            <!-- Cupcakes Input Field -->
+            <div class="form-group">
+                <label for="cupcakes">Cupcakes (RM 3.00 each):</label>
+                <input type="number" id="cupcakes" name="cupcakes" min="0" value="0">
+            </div>
+
+            <!-- Cake Slices Input Field -->
+            <div class="form-group">
+            <label for="cake-slices">Cake Slices (RM 5.00 each):</label>
+            <input type="number" id="cake-slices" name="cakeSlices" min="0" value="0">
+        </div>
+
+        <!-- Price Output Field -->
+        <div class="form-group price-display">
+            <strong>Total Price: RM </strong>
+            <output name="totalPrice" for="cupcakes cake-slices">0</output>
+        </div>
+        </form>
+    </aside>
+</div>
+<hr>
+<footer>
+    <div id="contact" class="footer-container">
+
+        <!-- Store Contact Details -->
+        <div class="footer-contact">
+            <h3>Contact CampusBake&reg;</h3>
+            <p>📍 123 University Drive, Campus Center</p>
+            <p>📞 Phone: 012-3456789</p>
+            <p>✉️ Email: hello@campusbake.com</p>
+        </div>
+
+        <!-- Separation line or visual break -->
+        <hr style="border: 0; border-top: 1px solid #555; margin: 15px 0;">
+
+        <!-- Copyright and Legal info -->
+        <div class="footer-bottom">
+            <p>&copy;&nbsp;2026 CampusBake. All rights reserved.</p>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
