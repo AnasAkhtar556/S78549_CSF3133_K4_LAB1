@@ -1,0 +1,53 @@
+/* Navigation Bar Base Styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #2C3E50;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Link State Colors in LVHA Order */
+a:link {
+    color: #1A5276;
+}
+
+a:visited {
+    color: #7D3C98;
+}
+
+/* Navigation specific link colors */
+nav a:link,
+nav a:visited {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #E67E22;
+}
+
+nav a:hover {
+    background-color: #E67E22;
+    color: #FFFFFF;
+}
+
+a:active {
+    color: #C0392B;
+}
+
+nav a:active {
+    background-color: #C0392B;
+    color: #FFFFFF;
+}

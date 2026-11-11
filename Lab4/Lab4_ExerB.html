@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="cafe.css">
+
+    <!-- Internal CSS for page-specific styles -->
+    <style>
+        /* Heading text decorations */
+        h1 {
+            text-decoration: overline;
+        }
+        /* Paragraph typography and color */
+        p {
+            color: #333333;
+            text-align: justify;
+        }
+        /* Intro styling */
+        .intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+        }
+        /* Highlight class for new prices */
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+        /* Old price styling */
+        .old-price {
+            text-decoration: line-through;
+            color: #7f8c8d;
+            margin-right: 5px;
+        }
+        /* Video responsiveness */
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Feedback form container styling */
+        .feedback-form {
+            background-color: #F9EBEA;
+            padding: 20px;
+            border: 1px solid #E6B0AA;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: 20px 0;
+        }
+        .feedback-form div {
+            margin-bottom: 12px;
+        }
+        .feedback-form label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+  List of Identified and Fixed Errors from Given Code:
+1. Error 1 (Line 7): Invalid CSS comment syntax " Navigation bar " inside <style> tag; changed to /* Navigation bar */.
+2. Error 2 (Line 9): Invalid property value "list-style-type: no;"; changed to "list-style-type: none;".
+3. Error 3 (Line 13-16): Incorrect link state order (a:hover listed before a:visited breaks hover on visited links); corrected order to LVHA (a:link, a:visited, a:hover, a:active).
+4. Error 4 (Line 17): Invalid CSS property value "text-decoration: overlined;"; changed to "text-decoration: overline;".
+5. Error 5 (Line 19): Missing colon in CSS rule "color #333333;"; changed to "color: #333333;".
+6. Error 6 (Line 20-25): Unclosed CSS selector "#intro {" missing a closing brace "}"; added "}" before class rule.
+7. Error 7 (Line 22): Missing class dot for selector "highlight"; changed to ".highlight".
+8. Error 8 (Line 34): Broken navigation anchor target "href="menu""; changed to "href="#menu"".
+9. Error 9 (Line 41): Paragraph element mismatch where id "intro" in CSS was used as class="intro" in HTML; adjusted selector/class.
+10. Error 10 (Line 42 & 46): Duplicate id "item" used across multiple <article> tags; changed to unique elements or classes.
+11. Error 11 (Line 53): Video element missing "controls" attribute; added "controls".
+12. Error 12 (Line 54): Invalid MIME type "type="mp4""; changed to "type="video/mp4"".
+-->
+
+<header>
+<h1>e-Café Campus</h1>
+</header>
+
+<!-- Navigation Bar Section -->
+<nav>
+<ul>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#feedback">Feedback</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Today's Menu Section -->
+<section id="menu">
+<h2>Today's Menu</h2>
+<p class="intro">Freshly brewed coffee and local delights every day.</p>
+
+<article class="menu-item">
+<h3>Kopi Tarik</h3>
+<p>Only <span class="old-price">RM 4.50</span> <span class="highlight">RM 3.50</span></p>
+</article>
+
+<article class="menu-item">
+<h3>Nasi Lemak</h3>
+<p>Only <span class="old-price">RM 6.00</span> <span class="highlight">RM 5.00</span></p>
+</article>
+</section>
+
+<!-- Promotional Video Section -->
+<section id="video">
+<h2>Watch Our Story</h2>
+<figure>
+<video width="400" height="300" controls>
+<source src="cafe.mp4" type="video/mp4">
+                                       Your browser does not support the video tag.
+</video>
+<figcaption>Discover how we craft our signature coffee and fresh daily meals.</figcaption>
+</figure>
+</section>
+
+<!-- Customer Feedback Form Section -->
+<section id="feedback">
+<h2>Customer Feedback</h2>
+<form class="feedback-form" action="#" method="post">
+<div>
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name" required>
+</div>
+
+<div>
+<label for="email">E-mail:</label><br>
+<input type="email" id="email" name="email" required>
+</div>
+
+<div>
+<label>Visit Type:</label><br>
+<input type="radio" id="dine-in" name="visit_type" value="Dine-in">
+<label for="dine-in">Dine-in</label>
+<input type="radio" id="take-away" name="visit_type" value="Take-away">
+<label for="take-away">Take-away</label>
+</div>
+
+<div>
+<label>Favourite Items:</label><br>
+<input type="checkbox" id="kopi" name="favourites" value="Kopi Tarik">
+<label for="kopi">Kopi Tarik</label><br>
+<input type="checkbox" id="nasilemak" name="favourites" value="Nasi Lemak">
+<label for="nasilemak">Nasi Lemak</label><br>
+<input type="checkbox" id="tehtarik" name="favourites" value="Teh Tarik">
+<label for="tehtarik">Teh Tarik</label>
+</div>
+
+<div>
+<input type="submit" value="Submit Feedback">
+</div>
+</form>
+</section>
+
+<!-- Footer Section -->
+<footer id="contact">
+<address>
+ Contact us at: <a href="mailto:info@ecafe.campus.edu.my">info@ecafe.campus.edu.my</a>
+</address>
+<p>&copy; 2026 e-Café Campus</p>
+</footer>
+
+</body>
+</html>

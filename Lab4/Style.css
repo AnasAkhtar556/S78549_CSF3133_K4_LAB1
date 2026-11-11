@@ -1,0 +1,137 @@
+/* General Page Reset & Typography */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    background-color: #006699;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Link States (Strict Order: link -> visited -> hover -> active) */
+a:link {
+    color: #00aaff;
+}
+
+nav ul li a:link {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #8855ff;
+}
+
+nav ul li a:visited {
+    color: #ffffff;
+}
+
+a:hover, nav ul li a:hover {
+    background-color: #006699;
+    color: #ffffff;
+}
+
+a:active, nav ul li a:active {
+    color: #ff9900;
+}
+
+/* Section & ID Selectors */
+section {
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+#destinations {
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#video {
+    background-color: #eef5f8;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Class Selectors */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+}
+
+.price {
+    font-weight: bold;
+    color: #2e7d32;
+    font-size: 1.1em;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888888;
+    margin-right: 8px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trip-form {
+    background-color: #79D6BD;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+.meter-container {
+    margin-top: 15px;
+}
+
+/* Responsive Media Handling */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
