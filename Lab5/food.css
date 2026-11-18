@@ -1,0 +1,116 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FBF7F0;
+    color: #2C2C2C;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* 1. Header with Background Image */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+header h1 {
+    font-family: 'Courier New', monospace;
+    font-size: 2.6em;
+    margin: 0 0 10px 0;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.1em;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* 2. Horizontal Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+nav li a.active {
+    background-color: #E67E22;
+}
+
+/* 3. Main Content Container */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto 40px auto;
+}
+
+main section p {
+    text-align: justify;
+    line-height: 1.7;
+}
+
+/* 5. Stalls and Menu Table */
+#menu-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    background-color: white;
+}
+
+#menu-table th,
+#menu-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+#menu-table th {
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+}
+
+#menu-table tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+#menu-table tr:hover {
+    background-color: #FDEBD0;
+}
+
+#menu-table th.price,
+#menu-table td.price {
+    text-align: right;
+}
+
+/* 6. Footer */
+footer {
+    background-color: #EFE6D8;
+    color: #2C2C2C;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 0.9em;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Bookstore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
+
+</head>
+<body>
+<!-- Error 1 (shop.html, line 7): Incorrect rel attribute value "stylesheets" instead of "stylesheet", preventing CSS from loading.
+     Error 2 (shop.html, line 13): <style> place inside a <body> instead of <head>
+     Error 3 (shop.html, Line 18): Symbol' = ' instead of ':'
+     Error 4 (shop.html, line 26): Table id was "product" (singular), which did not match "#products" (plural) in shop.css.
+     Error 5 (shop.css, line 2): Misspelled Robotto, should be Roboto
+     Error 6 (shop.css, line 4): Misspelled 'no repeat', should be 'no-repeat'
+     Error 7 (shop.css, line 5): Misspelled bacground, should be background
+     Error 8 (shop.css, line 23): Invalid pseudo-class syntax "li:a:hover" (extra colon before 'a'; should be "li a:hover"
+     Error 9 (shop.css, line 27): Invalid spell 'collapsed' , should be 'collapse'
+     Error 10 (shop.css, line 37): Invalid pseudo-class "tr:hovered" (should be "tr:hover").
+     Error 11 (shop.css, line 45): Miss ';'.
+     -->
+<!-- Header Section -->
+<header>
+    <h1 style="color: white;">Campus Bookstore</h1>
+</header>
+<nav>
+<ul>
+    <li><a class=active href="#home">Home</a></li>
+    <li><a href="#books">Books</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<main>
+<p>Textbooks, stationery and more for every student.</p>
+<table id="products">
+    <thead>
+    <tr>
+        <th>Item</th>
+        <th>Category</th>
+        <th class="price">Price (RM)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Web Design Basics</td>
+        <td>Textbook</td>
+        <td class="price">45.00</td>
+    </tr>
+    <tr>
+        <td>A4 Notebook</td>
+        <td>Stationery</td>
+        <td class="price">6.50</td>
+    </tr>
+    <tr>
+        <td>USB Drive 32GB</td>
+        <td>Gadget</td>
+        <td class="price">25.00</td>
+    </tr>
+    <tr>
+        <td>Highlighter Set</td>
+        <td>Stationery</td>
+        <td class="price">9.90</td>
+    </tr>
+    </tbody>
+</table>
+</main>
+
+<footer>&copy; 2026 Campus Bookstore</footer>
+</body>
+</html>
